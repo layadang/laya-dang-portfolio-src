@@ -1,16 +1,14 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faVolumeHigh } from '@fortawesome/free-solid-svg-icons';
+import { faApple } from '@fortawesome/free-brands-svg-icons';
 
 const Navbar: React.FC = () => {
   return (
     <nav className="navbar">
       <div className="navbar-left">
         <span className="menu-item menu-icon">
-          <img
-            src="/icons/apple-logo.ico"
-            alt="Apple"
-            className="navbar-icon"
-            draggable="false"
-          />
+          <FontAwesomeIcon icon={faApple} className="navbar-icon" size="lg"/>
         </span>
         <span className="menu-item">
           <b>Laya's Portfolio</b>
@@ -22,12 +20,7 @@ const Navbar: React.FC = () => {
       </div>
       <div className="navbar-right">
         <span className="menu-item menu-icon">
-          <img
-            src="/icons/volume-on.ico"
-            alt="Volume"
-            className="navbar-icon"
-            draggable="false"
-          />
+          <FontAwesomeIcon icon={faVolumeHigh} className="navbar-icon" size="lg"/>
         </span>
         <span className="menu-item">Sat 22 Nov 12:54 PM</span>
       </div>
