@@ -8,7 +8,7 @@ const Navbar: React.FC = () => {
     <nav className="navbar">
       <div className="navbar-left">
         <span className="menu-item menu-icon">
-          <FontAwesomeIcon icon={faApple} className="navbar-icon" size="lg"/>
+          <FontAwesomeIcon icon={faApple} className="navbar-icon" size="lg" />
         </span>
         <span className="menu-item">
           <b>Laya's Portfolio</b>
@@ -20,7 +20,11 @@ const Navbar: React.FC = () => {
       </div>
       <div className="navbar-right">
         <span className="menu-item menu-icon">
-          <FontAwesomeIcon icon={faVolumeHigh} className="navbar-icon" size="lg"/>
+          <FontAwesomeIcon
+            icon={faVolumeHigh}
+            className="navbar-icon"
+            size="lg"
+          />
         </span>
         <span className="menu-item">Sat 22 Nov 12:54 PM</span>
       </div>
