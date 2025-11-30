@@ -1,5 +1,5 @@
 // src/components/Desktop/Icon.tsx
-import React, { useState } from 'react';
+import React from 'react';
 import DraggableComponent from '../common/Draggable';
 
 interface IconProps {
@@ -8,12 +8,6 @@ interface IconProps {
 }
 
 const Icon: React.FC<IconProps> = ({ iconName, defaultPosition }) => {
-  const [isPopupOpen, setPopupOpen] = useState(false);
-
-  const togglePopup = () => {
-    setPopupOpen(!isPopupOpen);
-  };
-
   let iconToLabel = new Map();
   iconToLabel.set('trash', 'Trash');
   iconToLabel.set('finder', 'About Me');
