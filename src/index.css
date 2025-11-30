@@ -1,22 +1,25 @@
 :root {
-  --primary-color: #95CA72;
-  --light-text-color: #FCFFFA;
+  --primary-color: #95ca72;
+  --light-text-color: #fcfffa;
   --tile-size: 150px;
 }
 
-html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
 }
 
 body {
-  font-family: "Lucida Grande", "Lucida Sans Unicode", "Segoe UI", Helvetica, Arial, sans-serif;
+  font-family:
+    'Lucida Grande', 'Lucida Sans Unicode', 'Segoe UI', Helvetica, Arial,
+    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--primary-color);
-  background-image: url("../public/smiski-background.png");
+  background-image: url('../public/smiski-background.png');
   background-repeat: repeat;
   background-position-x: -50px;
   background-position-y: -45px;

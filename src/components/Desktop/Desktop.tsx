@@ -14,9 +14,13 @@ const Desktop: React.FC = () => {
 
   return (
     <div className="desktop">
-      <Navbar/>
-      {icons.map(icon => (
-        <Icon key={icon.name} iconName={icon.name} defaultPosition={icon.defaultPosition} />
+      <Navbar />
+      {icons.map((icon) => (
+        <Icon
+          key={icon.name}
+          iconName={icon.name}
+          defaultPosition={icon.defaultPosition}
+        />
       ))}
     </div>
   );

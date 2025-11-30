@@ -4,7 +4,7 @@ import DraggableComponent from '../common/Draggable';
 
 interface IconProps {
   iconName: string;
-  defaultPosition: { x: number, y: number };
+  defaultPosition: { x: number; y: number };
 }
 
 const Icon: React.FC<IconProps> = ({ iconName, defaultPosition }) => {
@@ -24,8 +24,12 @@ const Icon: React.FC<IconProps> = ({ iconName, defaultPosition }) => {
   return (
     <DraggableComponent defaultPosition={defaultPosition}>
       <div className="icon">
-        <img src={`/app-icons/${iconName}.png`} alt={iconName} draggable="false"/>
-        <span className='icon_label'>{iconToLabel.get(iconName)}</span>
+        <img
+          src={`/app-icons/${iconName}.png`}
+          alt={iconName}
+          draggable="false"
+        />
+        <span className="icon_label">{iconToLabel.get(iconName)}</span>
       </div>
     </DraggableComponent>
   );
