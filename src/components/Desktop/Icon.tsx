@@ -17,9 +17,12 @@ const Icon: React.FC<IconProps> = ({ iconName, defaultPosition }) => {
   let iconToLabel = new Map();
   iconToLabel.set('trash', 'Trash');
   iconToLabel.set('finder', 'About Me');
-  iconToLabel.set('folder', 'Projects');
+  iconToLabel.set('folder-1', 'Experience');
+  iconToLabel.set('folder-2', 'Projects');
   iconToLabel.set('mail', 'Mail');
   iconToLabel.set('itunes', 'Music');
+  iconToLabel.set('internet-explorer', 'Internet');
+  iconToLabel.set('notes', 'Notes');
 
   return (
     <DraggableComponent defaultPosition={defaultPosition}>
