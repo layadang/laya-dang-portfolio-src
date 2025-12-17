@@ -5,9 +5,10 @@ import DraggableComponent from '../common/Draggable';
 interface IconProps {
   iconName: string;
   defaultPosition: { x: number; y: number };
+  onOpen: (windowId: string) => void;
 }
 
-const Icon: React.FC<IconProps> = ({ iconName, defaultPosition }) => {
+const Icon: React.FC<IconProps> = ({ iconName, defaultPosition, onOpen }) => {
   let iconToLabel = new Map();
   iconToLabel.set('trash', 'Trash');
   iconToLabel.set('finder', 'About Me');
@@ -20,7 +21,7 @@ const Icon: React.FC<IconProps> = ({ iconName, defaultPosition }) => {
 
   return (
     <DraggableComponent defaultPosition={defaultPosition}>
-      <div className="icon">
+      <div className="icon" onClick={() => onOpen(iconName)}>
         <img
           src={`/app-icons/${iconName}.png`}
           alt={iconName}
